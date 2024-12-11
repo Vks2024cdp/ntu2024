@@ -5,7 +5,7 @@ def string_reverse(s):
     - s must be a string.
     - Return the reversed string.
     """
-if not isinstance(s, str):
+    if not type(s) is str:
         raise ValueError("Input must be a string.")
     
     # Reverse the string and return it
