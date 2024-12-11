@@ -5,15 +5,12 @@ def check_divisibility(num, divisor):
     - Both num and divisor must be numeric.
     - Return True if num is divisible by divisor, False otherwise.
     """
-     if not (isinstance(num, (int, float)) and isinstance(divisor, (int, float))):
+    if not (isinstance(num, (int, float)) and isinstance(divisor, (int, float))):
         raise ValueError("Both inputs must be numeric.")
     
-         if divisor == 0:
+    if divisor == 0:
         raise ValueError("Divisor cannot be zero.")
-    
-    # Return True if divisible, False otherwise
     return num % divisor == 0
-
 
 
 # Task 2
