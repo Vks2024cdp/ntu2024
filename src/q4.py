@@ -8,7 +8,6 @@ def string_reverse(s):
     if not type(s) is str:
         raise ValueError("Input must be a string.")
     
-    # Reverse the string and return it
     return s[::-1]
 
 # Task 2
