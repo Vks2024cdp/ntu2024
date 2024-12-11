@@ -8,7 +8,7 @@ def find_and_replace(lst, find_val, replace_val):
 
       if not type(lst) is list:
         raise ValueError("First input must be a list")
-    return [replace_val if item == find_val else item for item in lst]
+      return [replace_val if item == find_val else item for item in lst]
 
 
 # Task 2
