@@ -5,10 +5,20 @@ def string_reverse(s):
     - s must be a string.
     - Return the reversed string.
     """
-    return
-
+if not isinstance(s, str):
+        raise ValueError("Input must be a string.")
+    
+    # Reverse the string and return it
+    return s[::-1]
 
 # Task 2
 # Invoke the function "string_reverse" using the following scenarios:
 # - "Hello World"
+
+output1 = string_reverse("Hello World")
+print("Reversed string:", output1)
+
+
 # - "Python"
+output2 = string_reverse("Python")
+print("Reversed string:", output2)
